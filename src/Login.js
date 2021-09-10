@@ -14,6 +14,7 @@ function Login() {
                 <form>
                     <h5>E-mail</h5>
                     <input type="email" />
+                    {/* <h4>Password</h4> */}
                     <h5>Password</h5>
                     <input type="password" />
                     <button type="submit" className="login__signInButton">Sign In</button>
