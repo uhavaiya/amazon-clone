@@ -76,7 +76,29 @@ function Home() {
           image="https://m.media-amazon.com/images/I/71qE6chtx+L._AC_SL1500_.jpg"
         />
       </div>
-
+      <div className="home__row">
+        <Product
+          id="121314"
+          title='LG UHD TV 65" Real 4K LED Display, ThinQ AI with Magic Remote'
+          price={796.72}
+          rating={4}
+          image="https://m.media-amazon.com/images/I/A19cnsdWQlL._AC_SL1500_.jpg"
+        />
+        <Product
+          id="121314"
+          title="Yool Handheld Precision Massager Gun Deep Tissue Muscle Pain"
+          price={99.99}
+          rating={4}
+          image="https://m.media-amazon.com/images/I/61vvlsDXJdL._AC_SL1500_.jpg"
+        />
+        <Product
+          id="121314"
+          title="Universal Remote Control for Samsung TV Replacement for LCD LED HDTV 3D Smart Samsung TVs Remote"
+          price={11.16}
+          rating={4}
+          image="https://m.media-amazon.com/images/I/51GxgHSNolL._AC_SL1000_.jpg"
+        />
+      </div>
     </div>
   )
 }
