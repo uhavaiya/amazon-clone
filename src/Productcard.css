@@ -1,0 +1,15 @@
+.productcart {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.productcart__image {
+    object-fit: contain;
+    height: 160px;
+    width: 160px;
+}
+.productcart__title {
+    font-size: 16px;
+    font-weight: 600;
+    
+}

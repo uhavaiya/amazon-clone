@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Login.css'
 import { Link, useHistory } from 'react-router-dom'
-import {auth} from './firebase'
+import { auth } from './firebase'
 function Login() {
 
     const history = useHistory();
@@ -9,20 +9,20 @@ function Login() {
     const [userpassword, setUserPassword] = useState('');
 
     const loginuser = event => {
-        event.preeventDefult()
+        event.preventDefault()
         auth.signInWithEmailAndPassword(useremail, userpassword)
-        .then((auth) => {
-            history.push('/')
-        })
-        .catch(e => alert(e.message))
+            .then((auth) => {
+                history.push('/')
+            })
+            .catch(e => alert(e.message))
     }
     const signupuser = event => {
         event.preventDefault()
         auth.createUserWithEmailAndPassword(useremail, userpassword)
-        .then((auth)=>{
-            history.push('/')
-        })
-        .catch(e => alert(e.message))
+            .then((auth) => {
+                history.push('/')
+            })
+            .catch(e => alert(e.message))
     }
     return (
         <div className="login">
